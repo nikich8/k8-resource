@@ -1,8 +1,7 @@
 apiVersion: v1
-kide: pod
+kide: Pod
 metadata:
-  name: mutlti-container
-  namespace: roboshop
+  name: multi-container
 spec:
   containers:
   - name: hello-pod
