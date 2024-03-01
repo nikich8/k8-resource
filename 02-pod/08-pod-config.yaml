@@ -10,7 +10,7 @@ spec:
     - containerPort: 80
     env:
     #dont hardcode config map values
-    - name: course:
+    - name: course
       valueFrom:
         configMapkeyRef:
           name: devop-config
