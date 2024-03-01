@@ -3,5 +3,5 @@ kind: ConfigMap
 metadata: 
   name: devops-config
 data:
-  cource: Devops
+  course: Devops
   trainer: "Shiva"  
