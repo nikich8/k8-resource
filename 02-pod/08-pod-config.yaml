@@ -20,7 +20,7 @@ spec:
           name: devops-config
           key: trainer
 
------
+---
 #to reduce 
 apiVersion: v1
 kind: Pod
