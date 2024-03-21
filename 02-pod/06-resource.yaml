@@ -3,11 +3,11 @@ kind: Pod
 metadata:
   name: hello-pod
 spec:
- containers:
+  containers:
   - name: hello-pod
     image: nginx
     ports:
-    - conterPort: 80
+    - containerPort: 80
     resources:
       requests:
         cpu: "100m"
