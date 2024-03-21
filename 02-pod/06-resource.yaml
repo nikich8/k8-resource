@@ -1,19 +1,18 @@
 apiVersion: v1
-kind: Pod
-metadata:
+Kind: Pod
+metadate:
   name: hello-pod
 spec:
-  containers:
+ containers:
   - name: hello-pod
     image: nginx
     ports:
-    - containerPort: 80
+    - conterPorts: 80
     resources:
-      requests:
+      request:
         cpu: "100m"
         memory: "68Mi"
-        
       limits:
         cpu: "200m"
         memory: "128Mi"
-        
+          
