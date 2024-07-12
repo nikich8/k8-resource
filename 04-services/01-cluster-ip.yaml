@@ -3,14 +3,13 @@ kind: Pod
 metadata:
   name: nginx-pod
   labels:
-    app: nginx    
-    demo: service
-spec:    
+    app: nginx
+spec:
   containers:
-  - name: nginx-pod
+  - name: nginx
     image: nginx
     ports:
-    containerPort: 80
+    - containerPort: 80
 ---
 apiVersion: v1
 kind: Service
@@ -19,7 +18,6 @@ metadata:
 spec:
   selector:
     app: nginx
-    demo: service
   ports:
   - protocol: TCP
     port: 80
