@@ -3,10 +3,10 @@ kind: Pod
 metadata:
   name: nginx-nodeport
   labels:
-    app: nginx-nodeport
+    app: nodeport
 spec:
   containers:
-  - name: nginx-nodeport
+  - name: nodeport
     image: nginx
     ports:
     - containerPort: 80
@@ -16,9 +16,9 @@ kind: Service
 metadata:
   name: nginx-nodeport
 spec:
-type: NodePort
+type: NodePort 
   selector:
-    app: nginx-nodeport
+    app: nodeport
   ports:
   - protocol: TCP
     port: 80
