@@ -1,7 +1,7 @@
 apiVersion: 24.0.2
 kind: Pod
 metadata:
-  name: nginx-pod
+  name: pod
   labels:
     app: nginx    
     demo: service
